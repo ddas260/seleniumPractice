@@ -26,6 +26,9 @@ public class TestPostScheduler {
 		chrome.navigate().to("chrome-extension://hamddmihoepamnkonchjkgbncapmlbea/popup.html#/calendar/");
 		chrome.findElement(By.xpath("//li/a[@title='Post Types']/span[@class='sidebarSpanName']")).click();
 		//This is a new line
+		chrome.findElement(By.xpath("//div[@class='dashboardHeader']/button[@class='blue_btn2']")).click();
+		chrome.findElement(By.xpath("//div[@class='popupBody']/input")).sendKeys("AutoTestPostType");
+		chrome.findElement(By.xpath("//div[@class='popupBody']/button")).click();
 		
 
 	}
